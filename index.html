@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vine's Quiz</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+      <div class="box">
+         <nav>
+            <p href="#" id="prev"><i class="fas fa-angle-left"></i> Previous</p>
+            <h4 id="completed">7/20</h4>
+         </nav>
+    
+
+<!--
+<audio id="audio" autoplay controls>
+  <source src="Candy.mp3"  type="audio/mp3">
+      </audio>-->
+
+         <div class="remain-time">
+            <div class="outer">
+               <div class="inner">
+                  <h5 id="timing">60</h5>
+               </div>
+            </div>
+         </div>
+
+         <div class="question-box">
+
+
+
+            <h5><span id="questionId">Q.No. 1</span> <span id="question"></span></h5>
+         </div>
+
+         <div class="options">
+            <h5>1987</h5><input type="checkbox" name="answer" value="A">
+            <label for="option1"><i class="fa-solid fa-check"></i></label>
+         </div>
+         <div class="options">
+            <h5>1957</h5><input type="checkbox" name="answer" value="B">
+            <label for="option2"><i class="fa-solid fa-check"></i></label>
+         </div>
+         <div class="options">
+            <h5>1945</h5><input type="checkbox" name="answer" value="C">
+            <label for="option3"><i class="fa-solid fa-check"></i></label>
+         </div>
+         <div class="options">
+            <h5>1998</h5><input type="checkbox" name="answer" value="D">
+            <label for="option4"><i class="fa-solid fa-check"></i></label>
+         </div>
+         <button class="next-btn">Next</button>
+      </div>
+
+   </div>
+   <div class="prompt">
+      <h2>Game Over 💀</h2>
+      <div class="buttons">
+         <button onclick="exitGame()" id="exit" type="">Exit</button>
+         <button onclick="playAgain()" id="playAgain" type="">Play Again</button>
+      </div>
+   </div>
+   <script src="script.js"></script>
+</body>
