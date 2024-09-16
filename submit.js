@@ -892,12 +892,12 @@ stars[4].style.color = "transparent"
 
 
 goBack.addEventListener('click', function (){
-   window.location.href = 'index.html'
+   window.location.href = 'quiz.html'
 });
 playAgain.addEventListener('click', function (){
-   window.location.href = 'index.html'
+   window.location.href = 'quiz.html'
 });
 nextStage.addEventListener('click', function() {
    alert("Next stage will be coming soon")
-   window.location.href = 'index.html'
+   window.location.href = 'quiz.html'
 });
