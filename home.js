@@ -18,5 +18,5 @@ function upadeteh4() {
 intervalId = setInterval(upadeteh4,100)
 
 start.addEventListener('click', function (){
-   window.location.href = "index.html"
+   window.location.href = "quiz.html"
 });
