@@ -12,6 +12,7 @@ function upadeteh4() {
    if(opacitylevel>=1){
    clearInterval(intervalId)
    console.log("clearInterval")
+      window.location.href = "quiz.html"
 }
 
 });
@@ -19,6 +20,6 @@ function upadeteh4() {
 intervalId = setInterval(upadeteh4,100)
 
 start.addEventListener('click', function (){
-   window.location.href = "quiz.html"
+   
    alert("quiz.html")
 });
