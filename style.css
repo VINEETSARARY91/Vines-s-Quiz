@@ -1,0 +1,227 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+   max-height: 100vh;
+   position: relative;
+}
+
+.container {
+   width: 100%;
+   height: 100vh;
+   background: #F6EFFF;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+
+
+}
+
+body .prompt {
+   position: absolute;
+   height: 250px;
+   width: 320px;
+   margin: 65px auto;
+   background: #FEFEFE;
+   padding: 20px;
+   display: none;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+   border-radius: 10px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   z-index: 5;
+   left: 50px;
+   top: 200px;
+
+   /* transition: .5s ease-in-out;*/
+
+
+
+}
+
+.prompt .buttons {
+   display: flex;
+   width: 80%;
+   justify-content: space-between;
+
+}
+
+.buttons button {
+   padding: 10px 15px;
+   outline: none;
+   border: none;
+   border-radius: 10px;
+
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.buttons button:nth-child(1) {
+   background: #EC4F7C;
+}
+
+.buttons button:nth-child(2) {
+   background: #4FEC92;
+
+}
+
+.container nav {
+   display: flex;
+   width: 380px;
+   height: 30px;
+   justify-content: space-between;
+   align-items: center;
+
+
+}
+
+.container nav p {
+   /* text-decoration: none;*/
+   color: #68518D;
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.container nav i {
+   font-size: 18px;
+}
+
+.container nav h4 {
+   font-size: 20px;
+   color: #68518D;
+
+}
+
+.container .question-box {
+   width: 100%;
+   height: 220px;
+   margin-bottom: 65px;
+   background: #FEFEFE;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+/*   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
+   position: relative;
+
+}
+
+.question-box h5 {
+   font-weight: normal;
+   font-size: 15px;
+   color: #666;
+}
+
+.question-box h5 span:nth-child(1) {
+   color: #68518D;
+   font-weight: 500;
+   font-size: 17px;
+   margin-right: 20px;
+   position: absolute;
+   top: 30px;
+   left: 30px;
+}
+
+.question-box h5 span:nth-child(2) {
+   font-weight: normal;
+   font-size: 15px;
+   color: #666;
+}
+
+.container .remain-time {
+   width: 90px;
+   height: 90px;
+   position: relative;
+   left: 37%;
+   margin-top: 20px;
+   top: 20px;
+   z-index: 1;
+
+
+}
+
+.remain-time .outer {
+   width: 90px;
+   height: 90px;
+   border-radius: 50%;
+   background: conic-gradient(#C199FF 360deg, #ededed 0deg);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+      -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+   transition: 1s ease-in
+}
+
+.outer .inner {
+   width: 75px;
+   height: 75px;
+   font-size: 20px;
+   border-radius: 50%;
+   background: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #000;
+
+
+}
+
+.container .options {
+   width: 100%;
+   height: 50px;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px 20px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   margin: 10px 0;
+   background: #fff;
+   color: #666;
+}
+
+.options input {
+   display: none;
+}
+
+.options label {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   border: 1px solid #C199FF;
+   background: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /*  background: #A0CFFF;*/
+}
+
+label i {
+   color: #fff;
+
+}
+
+.container .next-btn {
+   width: 100%;
+   height: 60px;
+   border-radius: 15px;
+   color: #fff;
+   font-weight: 600;
+   font-size: 24px;
+   border: 1px solid white;
+   outline: none;
+   text-align: center;
+   padding: 10px 20px;
+   margin-top: 20px;
+   background: #C199FF;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
