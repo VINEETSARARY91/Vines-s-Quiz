@@ -1,3 +1,4 @@
+
 const h4tag = document.querySelectorAll('h4')
 const start = document.querySelector('.start')
 let opacitylevel = 0.1;
@@ -19,4 +20,5 @@ intervalId = setInterval(upadeteh4,100)
 
 start.addEventListener('click', function (){
    window.location.href = "quiz.html"
+   alert("quiz.html")
 });
